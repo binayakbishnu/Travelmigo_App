@@ -303,10 +303,12 @@ class _ProfileState extends State<Profile> {
             child: ElevatedButton(
               onPressed: () {
                 print('Logged out');
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LogIn()),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (context) => LogIn()),
+                // );
+                FirebaseAuth.instance.signOut();
+                // return LogIn();
               },
               child: Text('Logout'),
             ),
