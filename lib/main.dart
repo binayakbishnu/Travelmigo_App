@@ -45,12 +45,16 @@ class SomethingWentWrong extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        '!!!Error!!!',
-        style: TextStyle(
-          color: Colors.red,
-          fontWeight: FontWeight.bold,
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: Text(
+            '!!!Error!!!',
+            style: TextStyle(
+              color: Colors.red,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );
@@ -62,8 +66,12 @@ class Loading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('App is loading...'),
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: Text('App is loading...'),
+        ),
+      ),
     );
   }
 }
