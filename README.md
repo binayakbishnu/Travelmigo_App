@@ -1,3 +1,3 @@
-# travelmigo_2021
+# Travelmigo
 
 A one-stop travel buddy for tourists
