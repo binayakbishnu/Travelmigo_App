@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "224356095542",
+    "project_id": "travelapp-project-travelmigo",
+    "storage_bucket": "travelapp-project-travelmigo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224356095542:android:85644b129278d2f4bfaa97",
+        "android_client_info": {
+          "package_name": "com.example.travelmigo_2021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224356095542-b7t45dt5cp5jjuhada3qtsoo0nppodu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB62DxBM2GU1UHA4sJ2bHJvwwfZZ515pa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224356095542-b7t45dt5cp5jjuhada3qtsoo0nppodu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
