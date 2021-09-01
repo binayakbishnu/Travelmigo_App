@@ -62,8 +62,12 @@ class _PlacesDetailsPageState extends State<PlacesDetailsPage> {
                     text: widget.placed.city,
                     //!!
                     style: TextStyle(
-                      fontFamily: 'Lobster',
+                      // fontFamily: 'Lobster',
+                      // fontSize: 35.0,
+                      fontFamily: 'Lobster_Two',
                       fontSize: 35.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
                     ),
                   ),
                 ],

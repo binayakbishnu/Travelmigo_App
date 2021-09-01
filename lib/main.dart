@@ -5,76 +5,76 @@ import 'package:travelmigo_2021/screens/wrapper.dart';
 // void main() {
 //   runApp(MyApp());
 // }
-// void main() async {
-//   WidgetsFlutterBinding.ensureInitialized();
-//   await Firebase.initializeApp();
-//   runApp(MyApp());
-// }
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
-  runApp(Portal());
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
+// void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   // await Firebase.initializeApp();
+//   runApp(Portal());
+// }
 
-class Portal extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return FutureBuilder(
-      //* Initialize FlutterFire
-      future: Firebase.initializeApp(),
-      builder: (context, snapshot) {
-        //// Check for errors
-        if (snapshot.hasError) {
-          return SomethingWentWrong();
-        }
+// class Portal extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return FutureBuilder(
+//       //* Initialize FlutterFire
+//       future: Firebase.initializeApp(),
+//       builder: (context, snapshot) {
+//         //// Check for errors
+//         if (snapshot.hasError) {
+//           return SomethingWentWrong();
+//         }
 
-        //// Once complete, show your application
-        if (snapshot.connectionState == ConnectionState.done) {
-          return MyApp();
-        }
+//         //// Once complete, show your application
+//         if (snapshot.connectionState == ConnectionState.done) {
+//           return MyApp();
+//         }
 
-        //// Otherwise, show something whilst waiting for initialization to complete
-        return Loading();
-      },
-    );
-  }
-}
+//         //// Otherwise, show something whilst waiting for initialization to complete
+//         return Loading();
+//       },
+//     );
+//   }
+// }
 
-class SomethingWentWrong extends StatelessWidget {
-  // const SomethingWentWrong({Key? key}) : super(key: key);
+// class SomethingWentWrong extends StatelessWidget {
+//   // const SomethingWentWrong({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          child: Text(
-            '!!!Error!!!',
-            style: TextStyle(
-              color: Colors.red,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         body: Container(
+//           child: Text(
+//             '!!!Error!!!',
+//             style: TextStyle(
+//               color: Colors.red,
+//               fontWeight: FontWeight.bold,
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
-class Loading extends StatelessWidget {
-  // const Loading({Key? key}) : super(key: key);
+// class Loading extends StatelessWidget {
+//   // const Loading({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          child: Text('App is loading...'),
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         body: Container(
+//           child: Text('App is loading...'),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 class MyApp extends StatelessWidget {
   @override

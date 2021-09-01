@@ -53,8 +53,10 @@ class _HomeState extends State<Home> {
                   TextSpan(
                     text: ' Travelmigo!',
                     style: TextStyle(
-                      fontFamily: 'Lobster',
+                      fontFamily: 'Lobster_Two',
                       fontSize: 35.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
                     ),
                   ),
                 ],

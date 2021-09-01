@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:travelmigo_2021/sub_screens/SearchBar.dart';
-import 'package:travelmigo_2021/screens/authenticate/log_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:ui';
 //? ^for frosted glass
@@ -66,8 +65,12 @@ class _ProfileState extends State<Profile> {
                   TextSpan(
                     text: ' Travelmigo!',
                     style: TextStyle(
-                      fontFamily: 'Lobster',
+                      // fontFamily: 'Lobster',
+                      // fontSize: 35.0,
+                      fontFamily: 'Lobster_Two',
                       fontSize: 35.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
                       color: Theme.of(context).primaryColor,
                     ),
                   ),

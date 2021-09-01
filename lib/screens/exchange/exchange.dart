@@ -64,8 +64,12 @@ class XchangeState extends State<Xchange> {
                   TextSpan(
                     text: ' Travelmigo!',
                     style: TextStyle(
-                      fontFamily: 'Lobster',
+                      // fontFamily: 'Lobster',
+                      // fontSize: 35.0,
+                      fontFamily: 'Lobster_Two',
                       fontSize: 35.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
                       color: Theme.of(context).scaffoldBackgroundColor,
                     ),
                   ),
