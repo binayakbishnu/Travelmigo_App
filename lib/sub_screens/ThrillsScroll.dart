@@ -59,19 +59,19 @@ class ThrillsScroll extends StatelessWidget {
           // color: Theme.of(context).primaryColor,
 
           decoration: BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                // color: Color.fromRGBO(35, 35, 35, 1.0),
-                color: Theme.of(context).shadowColor,
+              // boxShadow: [
+              //   BoxShadow(
+              //     // color: Color.fromRGBO(35, 35, 35, 1.0),
+              //     color: Theme.of(context).shadowColor,
+              //   ),
+              //   BoxShadow(
+              //     color: Theme.of(context).scaffoldBackgroundColor,
+              //     //! INNER SHADOW
+              //     spreadRadius: -25.0,
+              //     blurRadius: 100.0,
+              //   ),
+              // ],
               ),
-              BoxShadow(
-                color: Theme.of(context).scaffoldBackgroundColor,
-                //! INNER SHADOW
-                spreadRadius: -25.0,
-                blurRadius: 100.0,
-              ),
-            ],
-          ),
           child: Padding(
             padding: EdgeInsets.symmetric(
               vertical: 20.0,
@@ -142,6 +142,19 @@ class ThrillsScroll extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Theme.of(context).scaffoldBackgroundColor,
                               borderRadius: BorderRadius.circular(10.0),
+                              boxShadow: [
+                                BoxShadow(
+                                  // color: Color.fromRGBO(35, 35, 35, 1.0),
+                                  color: Theme.of(context).shadowColor,
+                                ),
+                                BoxShadow(
+                                  // color: Theme.of(context).accentColor,
+                                  color: Color.fromRGBO(97, 97, 97, 1.0),
+                                  //! INNER SHADOW
+                                  spreadRadius: 0.0,
+                                  blurRadius: 15.0,
+                                ),
+                              ],
                             ),
                             child: Padding(
                               padding: EdgeInsets.all(15.0),

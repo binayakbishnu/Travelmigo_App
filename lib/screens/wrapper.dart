@@ -12,6 +12,5 @@ class Wrapper extends StatelessWidget {
     //// return Home();
     //? Now going to home == going to NavigationWid
     // return NavBase();
-    // return AllPlaces();
   }
 }
