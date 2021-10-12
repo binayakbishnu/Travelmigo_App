@@ -221,11 +221,21 @@ class XchangeState extends State<Xchange> {
                     print("Enter both!");
                     _nullAlert.text = "Enter either of the two";
                   } else if (_right.text == "") {
-                    _right.text = _left.text * 3;
-                    // _nullAlert.text = "";
+                    print(_left.text);
+                    double _leftint = double.parse(_left.text);
+                    // print(_leftint * 0.013);
+                    _leftint = _leftint * 0.013;
+                    _right.text = _leftint.toString();
+                    print(_right.text);
+                    _nullAlert.text = "";
                   } else if (_left.text == "") {
-                    _left.text = _right.text * 3;
-                    // _nullAlert.text = "";
+                    print(_right.text);
+                    double _rightint = double.parse(_right.text);
+                    // print(_rightint * 75.5);
+                    _rightint = _rightint * 75.5;
+                    _left.text = _rightint.toString();
+                    print(_left.text);
+                    _nullAlert.text = "";
                   }
                 },
                 child: Text('Go'),

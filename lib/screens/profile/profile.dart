@@ -23,7 +23,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Theme.of(context).primaryColor,
+      // color: Theme.of(context).primaryColor,
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: ListView(
@@ -71,7 +71,7 @@ class _ProfileState extends State<Profile> {
                       fontSize: 35.0,
                       fontWeight: FontWeight.bold,
                       fontStyle: FontStyle.italic,
-                      color: Theme.of(context).primaryColor,
+                      color: Color.fromRGBO(0, 0, 0, 0.0),
                     ),
                   ),
                 ],
@@ -213,8 +213,8 @@ class _ProfileState extends State<Profile> {
                             TextSpan(
                               // text: 'bishnu.binayak12@gmail.com',
                               //! email from firebase
-                              text: userID(),
-                              // text: 'abcd',
+                              // text: userID(),
+                              text: 'abcd',
                               style: TextStyle(
                                 fontSize: 15.0,
                                 fontWeight: FontWeight.bold,
