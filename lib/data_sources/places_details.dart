@@ -15,7 +15,6 @@ class PlacesDetails {
   });
 }
 
-//TODO all details
 List<PlacesDetails> detailsLondon = [
   PlacesDetails(
     detailsPic: "resources/images/tower_of_london.jpg",

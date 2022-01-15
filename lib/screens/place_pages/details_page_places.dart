@@ -94,27 +94,59 @@ class _PlacesDetailsPageState extends State<PlacesDetailsPage> {
               physics: ScrollPhysics(),
               itemBuilder: (BuildContext context, int index) {
                 PlacesDetails placedata = widget.placed.details[index];
-                return Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      height: 20.0,
-                    ),
-                    Text(
-                      placedata.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15.0,
+                return Padding(
+                  padding: EdgeInsets.only(
+                    left: 10.0,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        height: 20.0,
                       ),
-                    ),
-                    // Text(placedata.rate.toString()),
-                    Image(
-                      image: AssetImage(placedata.detailsPic),
-                      fit: BoxFit.cover,
-                      //? to stretch image to fit whole box
-                    ),
-                  ],
+
+                      // !content
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          bottom: 5.0,
+                        ),
+                        child: Text(
+                          placedata.name,
+                          style: TextStyle(
+                            fontFamily: 'Lobster',
+                            fontSize: 15.0,
+                            // placedata.name,
+                            // style: TextStyle(
+                            //   fontWeight: FontWeight.bold,
+                            //   fontSize: 15.0,
+                          ),
+                        ),
+                      ),
+                      // Text(placedata.rate.toString()),
+
+                      ClipRRect(
+                        // borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(10.0),
+                          bottomRight: Radius.circular(10.0),
+                        ),
+                        child: Image(
+                          image: AssetImage(placedata.detailsPic),
+                          fit: BoxFit.cover,
+                          width: MediaQuery.of(context).size.width - 40,
+                          //? to stretch image to fit whole box
+                        ),
+                      ),
+
+                      /* Image(
+                        image: AssetImage(placedata.detailsPic),
+                        fit: BoxFit.cover,
+                        width: MediaQuery.of(context).size.width - 40,
+                        //? to stretch image to fit whole box
+                      ), */
+                    ],
+                  ),
                 );
               },
             ),

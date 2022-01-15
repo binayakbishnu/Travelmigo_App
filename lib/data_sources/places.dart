@@ -32,13 +32,11 @@ List<Places> places = [
     desp: "Land of fashion, food and fine wine",
     details: detailsParis,
   ),
-
-  //TODO descriptions
   Places(
     pic: 'resources/images/cairo-1.jpg',
     city: "Cairo",
     country: "Egypt",
-    desp: "Inventore, quis distinctio! Suscipit!",
+    desp: "Pay a visit to the Sphinx!",
     details: detailsCairo,
   ),
   Places(

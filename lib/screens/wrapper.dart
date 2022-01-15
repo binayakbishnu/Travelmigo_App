@@ -8,9 +8,9 @@ class Wrapper extends StatelessWidget {
     // return Container(
     //   child: Text('Wrapper'),
     // );
-    // return Authenticate();
+    return Authenticate();
     //// return Home();
     //? Now going to home == going to NavigationWid
-    return NavBase();
+    // return NavBase();
   }
 }

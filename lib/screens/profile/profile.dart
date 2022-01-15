@@ -211,10 +211,8 @@ class _ProfileState extends State<Profile> {
                               ),
                             ),
                             TextSpan(
-                              // text: 'bishnu.binayak12@gmail.com',
                               //! email from firebase
-                              // text: userID(),
-                              text: 'abcd',
+                              text: userID(),
                               style: TextStyle(
                                 fontSize: 15.0,
                                 fontWeight: FontWeight.bold,
