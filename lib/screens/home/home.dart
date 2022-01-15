@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
           SizedBox(height: 20.0),
 
           //!Top Buttons
-          TopButtons(),
+          // TopButtons(),
 
           //! add space
           SizedBox(height: 20.0),

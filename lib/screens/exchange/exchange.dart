@@ -224,7 +224,7 @@ class XchangeState extends State<Xchange> {
                     print(_left.text);
                     double _leftint = double.parse(_left.text);
                     // print(_leftint * 0.013);
-                    _leftint = _leftint * 0.013;
+                    _leftint = _leftint * 0.014285;
                     _right.text = _leftint.toString();
                     print(_right.text);
                     _nullAlert.text = "";
@@ -232,7 +232,7 @@ class XchangeState extends State<Xchange> {
                     print(_right.text);
                     double _rightint = double.parse(_right.text);
                     // print(_rightint * 75.5);
-                    _rightint = _rightint * 75.5;
+                    _rightint = _rightint * 70.0;
                     _left.text = _rightint.toString();
                     print(_left.text);
                     _nullAlert.text = "";
