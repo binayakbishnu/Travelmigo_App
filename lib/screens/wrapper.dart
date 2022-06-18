@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travelmigo_2021/screens/authenticate/authenticate.dart';
+import 'package:travelmigo_2021/screens/home/home.dart';
 import 'package:travelmigo_2021/screens/navigator.dart';
 
 class Wrapper extends StatelessWidget {
@@ -8,8 +9,8 @@ class Wrapper extends StatelessWidget {
     // return Container(
     //   child: Text('Wrapper'),
     // );
-    return Authenticate();
-    //// return Home();
+    // return Authenticate();
+    return Home();
     //? Now going to home == going to NavigationWid
     // return NavBase();
   }

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:travelmigo_2021/screens/loading.dart';
 // import 'package:travelapp_project/screens/authenticate/log_in.dart';
 import 'package:travelmigo_2021/screens/navigator.dart';
 import 'package:travelmigo_2021/services/auth.dart';
+// import 'package:travelmigo_2021/screens/loading.dart';
 
 class SignUpForm extends StatefulWidget {
   // const SignUpForm({ Key? key }) : super(key: key);
